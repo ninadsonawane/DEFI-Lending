@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import "./App.css";
 import AccountDetails from "./components/AccountDetails";
 import Borrow from "./components/Borrow";
@@ -17,7 +17,7 @@ function App() {
         <Grid item xs={12}  md={4}>
           <AccountDetails />
         </Grid>
-      
+        <Grid xs={12} md={12} sx={{marginTop:"3%" , fontFamily:"'Heebo', sans-serif" , fontWeight:"600" , color:"#757ce8"}}><Typography align="center" variant="h4">Summary</Typography></Grid>
         <Grid item xs={12}  md={6}>
           <Lend />
         </Grid>
